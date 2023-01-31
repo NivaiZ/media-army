@@ -1,0 +1,52 @@
+.service-location__picture {
+  width: 420px;
+  height: 312px;
+}
+
+.service-location__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  background-color: @extra-black;
+}
+
+.service-location__item {
+  color: @basic-white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.service-location__phone {
+  color: @basic-white;
+  text-decoration: none;
+}
+
+.service-location__link {
+  color: @basic-yellow;
+  text-decoration: none;
+}
+
+.service-location__wrapper {
+  width: 100%;
+  max-width: 1340px;
+  height: 600px;
+  margin-top: -180px;
+}
+
+.service-location__wrapper .ymaps-2-1-79-inner-panes {
+  mix-blend-mode: luminosity;
+  width: 100%;
+
+  &:hover {
+    mix-blend-mode: unset;
+  }
+}
+
+.service-location {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: @basic-white;
+}
