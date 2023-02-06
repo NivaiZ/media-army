@@ -62,7 +62,7 @@
           </button>
         </li>
         <li class="main-menu__item main-menu__item--button">
-          <a class="button" href="#" target="_blank">Запись на сервис</a>
+          <a class="button" id="modal-button" href="#" target="_blank">Запись на сервис</a>
         </li>
       </ul>
     </nav>
@@ -775,11 +775,71 @@
         </li>
 
         <li class="social-block__item">
-          <p class="social-block__author">Дизайн и разработка - <a class="social-block__studio" href="#" target="_blank">Media Army</a></p>
+          <p class="social-block__author">Дизайн и разработка - <a class="social-block__studio" href="#"
+              target="_blank">Media Army</a></p>
         </li>
       </ul>
     </div>
   </footer>
+
+  <section class="modal-window" id="modal">
+    <div class="modal-window__inner">
+      <div class="modal-window__box">
+        <button class="modal-window__close" type="button" id="close-button">
+          <svg class="modal-window__button" width="24" height="24">
+            <use xlink:href="./img/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+        <h1 class="modal-window__heading">Запись на сервис</h1>
+        <form class="modal-window__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="modal-window__list">
+
+            <li class="modal-window__item">
+              <input class="modal-window__input" type="text" required>
+              <label class="modal-window__label">Ваше имя <span class="modal-window__decoration">*</span></label>
+            </li>
+
+            <li class="modal-window__item">
+              <input class="modal-window__input" type="text" required>
+              <label class="modal-window__label">Контактный телефон<span
+                  class="modal-window__decoration">*</span></label>
+            </li>
+
+            <li class="modal-window__item">
+
+              <select class="modal-window__select">
+                <option value="sel" disabled="" selected="">Марка автомобиля<span
+                  class="modal-window__decoration">*</span></option>
+                <option value="ds">Volvo</option>
+                <option value="fe">BMW</option>
+                <option value="be">Audi</option>
+                <option value="qa">Volkswagen</option>
+                <option value="un">Skoda</option>
+                <option value="un">Другой</option>
+              </select>
+
+            </li>
+
+            <li class="modal-window__item">
+              <textarea class="modal-window__input modal-window__textarea"></textarea>
+              <label class="modal-window__label modal-window__label--extra">Краткое описание проблемы<span
+                  class="modal-window__decoration">*</span></label>
+            </li>
+
+            <li class="modal-window__item">
+              <p class="modal-window__text">Нажимая кнопку «Отправить заявку» вы даете согласие на <a class="" href="#"
+                  target="_blank">Обработку персональных данных</a></p>
+              <button class="button button__navigation" type="button">Отправить заявку
+                <svg class="service-location__button" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#arrow-button"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <script src="./js/index.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
